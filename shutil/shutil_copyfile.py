@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+# @Author mazezen
+
+import glob
+import shutil
+
+print('BEFORE:', glob.glob('shutil_copyfile.*'))
+
+shutil.copyfile('shutil_copyfile.py', 'shutil_copyfile.py.copy')
+
+print('AFTER:', glob.glob('shutil_copyfile.*'))
